@@ -1,6 +1,6 @@
 # skPubSub
 Library that implements a simple publish/subscribe model in LiveCode  
-Example usage/test stack can be found at https://forums.livecode.com/viewtopic.php?f=7&t=38948&p=228512#p228509
+Example usage/test stack can be found [here](https://forums.livecode.com/viewtopic.php?f=7&t=38948&p=228512#p228509)
 
 ### About publish/subscribe
 In the Publish/Subscribe model, any handler can ‘Publish’ a message - ie. emit a message blindly, without knowing who will receive this and what will happen. One or more objects can ‘subscribe’ to this message and perform 1 or more actions when received, without the publisher knowing who the subscriber is, or the subscriber knowing who the publisher is (aka ‘loose coupling’). 
