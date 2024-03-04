@@ -5,7 +5,7 @@ Example usage/test stack can be found at https://forums.livecode.com/viewtopic.p
 ### About publish/subscribe
 In the Publish/Subscribe model, any handler can ‘Publish’ a message - ie. emit a message blindly, without knowing who will receive this and what will happen. One or more objects can ‘subscribe’ to this message and perform 1 or more actions when received, without the publisher knowing who the subscriber is, or the subscriber knowing who the publisher is (aka ‘loose coupling’). 
 
-Publishers post messages to an intermediary message broker (in this example a script loaded into the backScripts to be available in any context), and subscribers register subscriptions with that broker which logs the long id of the subscriber and which handler the subscriber should call (the ‘callback’ handler). A subscriber can register multiple callbacks for a message and can subscribe to multiple messages. 
+Publishers post messages to an intermediary message broker (in this case a library loaded into the backScripts to be available in any context), and subscribers register subscriptions with that broker which logs the long id of the subscriber and which handler the subscriber should call (the ‘callback’ handler). A subscriber can register multiple callbacks for a message and can subscribe to multiple messages. 
 
 ### The library
 The attached scriptOnlyStack is loaded by using ‘start using stack…”. The stack’s script loads it into the backScripts making it available in any context. 
