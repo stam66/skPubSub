@@ -1,5 +1,6 @@
 # skPubSub
-Library that implements a simple publish/subscribe model in LiveCode
+Library that implements a simple publish/subscribe model in LiveCode  
+Example usage/test stack can be found at https://forums.livecode.com/viewtopic.php?f=7&t=38948&p=228512#p228509
 
 ### About publish/subscribe
 In the Publish/Subscribe model, any part of the app can ‘Publish’ a message - ie. emit a message blindly, without knowing who will receive this and what will happen. One or more objects can ‘subscribe’ to this message and perform 1 or more actions when received, without the publisher knowing who the subscriber is, or the subscriber knowing who the publisher is (aka ‘loose coupling’). 
@@ -13,20 +14,20 @@ Andre Garzia published a book on advanced app architecture for LiveCode which bu
 (The book is well worth reading and highly recommended). 
 
 ### API
-**subscribe** pEvent, pCallback, pTarget
-•	pEvent is the message to subscribe to
-•	pCallback is the hander the subscriber will run when the message is received
-•	pTarget is the long id of the subscriber
-
-**broadcast** pEvent, pData
-•	pEvent is the message to broadcast
-•	pData are the parameters for the callback handler
-
-**unsubscribe** pEvent, pCallback, pTarget
-•	pEvent is the message to unsubscribe from
-•	pCallback is the callback to remove
-•	pTarget is the long id of the subscriber to unsubscribe 
-This allows specific callbacks to be removed without wholly unsuscribing; if not callback specified all are removed.
-
-**removeAllSubscriptions** 
+**subscribe** pEvent, pCallback, pTarget  
+•	pEvent is the message to subscribe to  
+•	pCallback is the hander the subscriber will run when the message is received  
+•	pTarget is the long id of the subscriber  
+  
+**broadcast** pEvent, pData  
+•	pEvent is the message to broadcast  
+•	pData are the parameters for the callback handler  
+  
+**unsubscribe** pEvent, pCallback, pTarget  
+•	pEvent is the message to unsubscribe from  
+•	pCallback is the callback to remove  
+•	pTarget is the long id of the subscriber to unsubscribe   
+This allows specific callbacks to be removed without wholly unsuscribing; if not callback specified all are removed.  
+  
+**removeAllSubscriptions**   
 All subscriptions for all controls are removed.
