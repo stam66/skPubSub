@@ -10,7 +10,7 @@ Publishers post messages to an intermediary message broker (in this case a libra
 ### The library
 The attached scriptOnlyStack is loaded by using ‘start using stack…”. The stack’s script loads it into the backScripts making it available in any context. 
 
-Andre Garzia published a book on advanced app architecture for LiveCode which bundled a simple stack that does this. While I had long ago purchased his eBook I couldn’t for the life of me locate the stack, so I have tried to re-created his script (more or less successfully) - any kudos should go to him, any blame with this should be directed at me! 
+Andre Garzia published a book called **Advanced Application Architecture for LiveCode**, which bundled a simple stack that does this. While I had long ago purchased his eBook I couldn’t for the life of me locate the stack, so I have tried to re-created his script (more or less successfully) - any kudos should go to him, any blame with this should be directed at me! 
 (The book is well worth reading and highly recommended). 
 
 ### API
